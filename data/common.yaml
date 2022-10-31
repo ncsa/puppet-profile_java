@@ -1,1 +1,17 @@
---- {}
+---
+profile_java::install_lock_files: true
+profile_java::lock_files:
+  # Note: It's not strictly necessary to override the default 0644 for these dirs,
+  #       because Puppet adds x to perms for dirs wherever r is specified. But
+  #       if it ever changes that behavior I'd really rather not lose access to /etc/.
+  "/etc":
+    ensure: "directory"
+    mode: "0755"
+  "/etc/.java":
+    ensure: "directory"
+    mode: "0755"
+  "/etc/.java/.systemPrefs":
+    ensure: "directory"
+    mode: "0755"
+  "/etc/.java/.systemPrefs/.system.lock":
+  "/etc/.java/.systemPrefs/.systemRootModFile":
