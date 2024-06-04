@@ -26,23 +26,23 @@ include profile_java
 
 The following parameters are available in the `profile_java` class:
 
-* [`install_lock_files`](#install_lock_files)
-* [`lock_files`](#lock_files)
-* [`pkg_list`](#pkg_list)
+* [`install_lock_files`](#-profile_java--install_lock_files)
+* [`lock_files`](#-profile_java--lock_files)
+* [`pkg_list`](#-profile_java--pkg_list)
 
-##### <a name="install_lock_files"></a>`install_lock_files`
+##### <a name="-profile_java--install_lock_files"></a>`install_lock_files`
 
 Data type: `Boolean`
 
 Boolean - Install lock files or not.
 
-##### <a name="lock_files"></a>`lock_files`
+##### <a name="-profile_java--lock_files"></a>`lock_files`
 
 Data type: `Hash`
 
 Hash of lock files (and parent dir(s)).
 
-##### <a name="pkg_list"></a>`pkg_list`
+##### <a name="-profile_java--pkg_list"></a>`pkg_list`
 
 Data type: `Array`
 
